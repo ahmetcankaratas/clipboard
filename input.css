@@ -23,13 +23,17 @@ body {
 }
 
 .section-content {
-  @apply mx-auto max-w-3xl text-center text-xl leading-9 text-grayishBlue;
+  @apply mx-auto max-w-3xl text-center leading-9 text-grayishBlue;
 }
 
 .button-container {
   @apply flex w-full flex-col justify-center space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
 }
 
+.font-icon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
 @media (max-width: 576px) {
   body {
     background-image: url('./../assets/images/bg-header-mobile.png');
